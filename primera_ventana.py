@@ -12,6 +12,7 @@ class VentanaBienvenida(QWidget):
 
         titulo = QLabel("📊 Sistema de Inventario")
         titulo.setAlignment(Qt.AlignCenter)
+        main
         titulo.setStyleSheet("font-size: 30px; font-weight: bold; margin-bottom: 15px;")
         layout.addWidget(titulo)
 
@@ -20,6 +21,11 @@ class VentanaBienvenida(QWidget):
         layout.addWidget(pregunta)
         
         
+
+        titulo.setStyleSheet("font-size: 18px; font-weight: bold; margin-bottom: 15px;")
+        layout.addWidget(titulo)
+
+        layout.addWidget(QLabel("Ingrese el nombre del producto:")
         self.input_producto = QLineEdit()
         self.input_producto.setPlaceholderText("Ej. Laptop, Teléfono...")
         layout.addWidget(self.input_producto)

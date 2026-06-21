@@ -11,6 +11,8 @@ class VentanaResumen(QWidget):
 
         titulo = QLabel("📋 Resumen de Inventario Registrado")
         titulo.setStyleSheet("font-size: 30px; font-weight: bold; margin-bottom: 10px;")
+        titulo.setStyleSheet("font-size: 16px; font-weight: bold; margin-bottom: 10px;")
+
         layout.addWidget(titulo)
 
         self.tabla = QTableWidget()
