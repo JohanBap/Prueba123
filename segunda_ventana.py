@@ -10,7 +10,6 @@ class VentanaAnalisis(QWidget):
         layout = QVBoxLayout()
 
         self.lbl_info = QLabel("")
-
         self.lbl_info.setStyleSheet("font-size: 25px; font-weight: bold; color: ; margin-bottom: 10px;")
         layout.addWidget(self.lbl_info)
 
@@ -18,24 +17,14 @@ class VentanaAnalisis(QWidget):
         cantidad.setStyleSheet("font-size: 18px; font-weight: bold;")
         layout.addWidget(cantidad)
         
-
-        self.lbl_info.setStyleSheet("font-size: 16px; font-weight: bold; color: #bf4c17; margin-bottom: 10px;")
-        layout.addWidget(self.lbl_info)
-
-        layout.addWidget(QLabel("Cantidad en Stock:"))
-
         self.input_cantidad = QLineEdit()
         self.input_cantidad.setPlaceholderText("Ej. 50")
         layout.addWidget(self.input_cantidad)
-
 
         precio = QLabel("Precio Unitario ($):")
         precio.setStyleSheet("font-size: 18px; font-weight: bold;")
         layout.addWidget(precio)
         
-
-        layout.addWidget(QLabel("Precio Unitario ($):"))
-
         self.input_precio = QLineEdit()
         self.input_precio.setPlaceholderText("Ej. 1200.50")
         layout.addWidget(self.input_precio)

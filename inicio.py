@@ -1,5 +1,4 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QStackedWidget, QWidget
 from PyQt5.QtWidgets import QApplication, QMainWindow, QStackedWidget
 
 from primera_ventana import VentanaBienvenida
@@ -10,12 +9,8 @@ class ControladorInventario(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Gestor de Inventario Inteligente")
-        main
        
         self.setStyleSheet("QMainWindow { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #88c0d1, stop:1 #64915e); } QStackedWidget { background: transparent; } .VentanaBienvenida, .VentanaAnalisis, .VentanaResumen { background: transparent; }")
-
-        self.setFixedSize(750, 500)
-        main
 
         self.producto_actual = ""
         self.historial_inventario = []
